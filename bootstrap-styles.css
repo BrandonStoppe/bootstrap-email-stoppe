@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+  }
+  
+  .navBarColor {
+    background-color: rgb(47, 47, 47);
+  }
+
+  .searchbar {
+    border-radius: 7px;
+    width: 300px;
+    border: none;
+  }
+
+  .sidebar {
+    font-size: 20px;
+    background-color: lightgrey;
+  }
+
+  .sidebar-list {
+    width: 100%;
+    max-width: 460px;
+    margin-inline: 1.2rem;
+    color: rgb(47, 47, 47);
+  }
+
+  .email-list {
+    width: 100%;
+    max-width: 460px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .message-content {
+    font-size: 20px;
+  }
