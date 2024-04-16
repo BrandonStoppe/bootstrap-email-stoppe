@@ -6,6 +6,20 @@ body {
     background-color: rgb(47, 47, 47);
   }
 
+  .heading {
+    color: lightgrey;
+    display: flex;
+    align-self: center;
+  }
+
+  .btn-primary {
+    height: 40px;
+    align-self: center;
+    background-color: orange;
+    border: none;
+    text-transform: uppercase;
+  }
+
   .searchbar {
     border-radius: 7px;
     width: 300px;
@@ -52,3 +66,28 @@ body {
     width: 100%;
     max-width: 460px;
   }
+
+  .compose-btn {
+    margin: 9px;
+    width: 120px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    align-content: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+  }
+
+  .compose-btn:hover {
+    background-color: white;
+    color: rgb(47, 47, 47);
+  }
+
+  .triforce {
+    margin-left: 25px;
+    margin-top: 20px;
+    }
