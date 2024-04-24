@@ -59,7 +59,28 @@
             </div>
             
             <!-- Compose Button -->
-            <button class="compose-btn">Compose</button>
+            <button type="button" class="compose-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Compose</button>
+
+            <!-- New Message Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">New Message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-group">
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- Triforce Icon -->
             <h1 class="heading d-none d-md-block"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-fill mb-2" viewBox="0 0 16 16">
@@ -77,7 +98,7 @@
         <div class="row main-content vh-100">
             
             <!-- Sidebar -->
-            <div class="col-md-3 col-xl-2 d-none d-md-block sidebar">
+            <div class="col-md-3 col-lg-2 d-none d-md-block sidebar">
                 <div class="triforce-container"><img src="triforce.png" alt="twbs" width="100" height="90" class="triforce"></div>
                     
                     <div class="sidebar-list mt-4 gap-5" role="tablist">
@@ -114,7 +135,7 @@
             </div>
 
             <!-- Message Content -->
-            <div class="col-sm-12 col-md-5 col-xl-6 message-container">
+            <div class="col-sm-12 col-md-5 col-lg-6 message-container">
                 <div class="row justify-content-end mt-5 message-content">
                     
                     <p>Link,</p>
@@ -128,14 +149,14 @@
                     </div>
                     
                     <!-- Reply Button -->
-                    <button class="reply-btn d-flex">Reply</button>
+                    <button type="button" class="reply-btn">Reply</button>
                     
                 </div>
 
             </div>
 
             <!-- Email List -->
-            <div class="col-sm-12 col-md-4 col-xl-4 email-group">
+            <div class="col-sm-12 col-md-4 col-lg-4 email-group">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                       <div class="d-flex gap-2 w-100 justify-content-between">

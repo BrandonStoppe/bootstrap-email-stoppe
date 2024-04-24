@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
  
   
@@ -53,7 +54,7 @@ body {
     font-size: 20px;
     background-color: lightgrey;
   }
-
+  
   .sidebar-list {
     width: 100%;
     max-width: 460px;
