@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Email Project</title>
 
+    <!-- Bootstrap List CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap-styles.css">
-    <!-- Bootstrap List CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="bootstrap-styles.css">
 </head>
+
 
 <body>
     <!-- Page Container -->
@@ -69,8 +72,23 @@
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">New Message</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
+                    
+                    <!-- Modal Inputs -->
+                    <div class="row justify-content-center mt-2">
+                      <span class="input-group-text col-2" id="inputGroup-sizing-sm">To:</span>
+                      <input class="col-8" type="text">
+                    </div>
+                    <div class="row justify-content-center mt-2">
+                      <span class="input-group-text col-2" id="inputGroup-sizing-sm">CC:</span>
+                      <input class="col-8" type="text">
+                    </div>
+                    <div class="row justify-content-center mt-2">
+                      <span class="input-group-text justify-content-center col-2" id="inputGroup-sizing-sm">Subject:</span>
+                      <input class="col-8" type="text">
+                    </div>
+
                   <div class="modal-body">
-                    <div class="input-group">
+                    <div class="input-group modal-input">
                       <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
                   </div>
@@ -136,14 +154,28 @@
 
             <!-- Message Content -->
             <div class="col-sm-12 col-md-5 col-lg-6 message-container">
-                <div class="row justify-content-end mt-5 message-content">
-                    
+                <div class="row justify-content-end mt-4 message-content">
+                  
+                  <!-- From & Subject Lines -->
+                  <div class="row mx-1">
+                    <span class="input-group-text col-sm-3 col-md-4 col-lg-2 mt-2" id="inputGroup-sizing-sm">From:</span>
+                    <input class="col-xs-3 col-sm-9 col-md-8 col-lg-10 mt-2" type="text" placeholder="noplacelikehyrule@hyrulemail.com">
+                  </div>
+                  <div class="row mx-1">
+                    <span class="input-group-text col-sm-3 col-md-4 col-lg-2 mt-2" id="inputGroup-sizing-sm">Subject:</span>
+                    <input class="col-xs-3 col-sm-9 col-md-8 col-lg-10 mt-2" type="text" placeholder="The Great Deku Tree">
+                  </div>
+                  
+                  <!-- Main Message -->
+                  <div class="email-text mt-5">  
                     <p>Link,</p>
                     <p>I know that you are a busy swordsman and have a ton of monsters and beasts to destroy and whatnot 
                         but can you please take some time to make your way over to the Lost Woods and visit The Great Deku 
                         Tree? He has been rather bored these days. I think he is going through some kind of midlife crisis 
                         questioning every decision he's ever made. He could really use a friend right now and frankly I am 
                         tired of hearing him complain...</p>
+                  </div>
+                    
                     <div class="input-group">
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
